@@ -90,6 +90,8 @@ fi
 
 heading "Installing system dependencies..."
 
+sudo apt-get install -y gnupg
+
 if [[ ! -z $DEB ]]; then
     sudo apt-get update
     sudo apt-get install -y git curl apt-transport-https update-notifier
